@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/porter-stemmer-playground/static/css/main.b939a08a.css",
+    "main.js": "/porter-stemmer-playground/static/js/main.c9287857.js",
+    "index.html": "/porter-stemmer-playground/index.html",
+    "main.b939a08a.css.map": "/porter-stemmer-playground/static/css/main.b939a08a.css.map",
+    "main.c9287857.js.map": "/porter-stemmer-playground/static/js/main.c9287857.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b939a08a.css",
+    "static/js/main.c9287857.js"
+  ]
+}
