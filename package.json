@@ -1,5 +1,6 @@
 {
-  "name": "lucene-web",
+  "name": "porter-stemmer-playground",
+  "homepage": "https://shadforth.github.io/porter-stemmer-playground",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
