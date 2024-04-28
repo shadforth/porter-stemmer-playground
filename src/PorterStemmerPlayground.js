@@ -6,9 +6,11 @@ import {
   Chip,
   Divider,
   FormControl,
+  Grid,
   Sheet,
   Stack,
   Textarea,
+  Tooltip,
   Typography,
 } from "@mui/joy";
 import { useState } from "react";
@@ -16,10 +18,12 @@ import { useState } from "react";
 const PorterStemmerPlayground = () => {
   const [textInput, setTextInput] = useState("");
   const [result, setResult] = useState("");
+  const TOOLTIP_TEXT =
+    "This is a sandbox for testing tokenisation using the Porter Stemmer algorithm.";
 
   const onPressTokenise = () => {
     const resultArr = PorterStemmer.tokenizeAndStem(textInput).map(
-      (value) => `'${value}'`
+      (value) => `'${value}'`,
     );
     const sortedSet = [...new Set(resultArr)].sort();
     const sortedSetStr = sortedSet.join(" ");
@@ -36,7 +40,7 @@ const PorterStemmerPlayground = () => {
       <Stack className="app-stack" spacing={2}>
         <Typography level="h2">
           Porter stemmer{" "}
-          <Chip color="danger" size="sm" variant="outlined">
+          <Chip color="danger" variant="solid" size="sm">
             Experimental
           </Chip>
         </Typography>
@@ -48,7 +52,6 @@ const PorterStemmerPlayground = () => {
             minRows={3}
           />
         </FormControl>
-
         <ButtonGroup
           buttonFlex={1}
           aria-label="flex button group"
@@ -68,9 +71,26 @@ const PorterStemmerPlayground = () => {
         <Sheet variant="soft" sx={{ p: 4, minHeight: "28px" }}>
           {result}
         </Sheet>
-        <Typography level="body-xs">
-          Token count: <strong>{result ? result.split(" ").length : 0}</strong>
-        </Typography>
+        <Grid container direction="row" justifyContent="space-between">
+          <Grid>
+            <Typography level="body-xs">
+              Token count:&nbsp;
+              <strong>{result ? result.split(" ").length : 0}</strong>
+            </Typography>
+          </Grid>
+          <Grid>
+            <Tooltip title={TOOLTIP_TEXT}>
+              <Chip
+                className="info-chip"
+                color="primary"
+                variant="outlined"
+                size="sm"
+              >
+                What is this?
+              </Chip>
+            </Tooltip>
+          </Grid>
+        </Grid>
       </Stack>
     </div>
   );
