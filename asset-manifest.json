@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/porter-stemmer-playground/static/css/main.b939a08a.css",
-    "main.js": "/porter-stemmer-playground/static/js/main.c9287857.js",
+    "main.css": "/porter-stemmer-playground/static/css/main.5cb67be2.css",
+    "main.js": "/porter-stemmer-playground/static/js/main.5adf95c5.js",
     "index.html": "/porter-stemmer-playground/index.html",
-    "main.b939a08a.css.map": "/porter-stemmer-playground/static/css/main.b939a08a.css.map",
-    "main.c9287857.js.map": "/porter-stemmer-playground/static/js/main.c9287857.js.map"
+    "main.5cb67be2.css.map": "/porter-stemmer-playground/static/css/main.5cb67be2.css.map",
+    "main.5adf95c5.js.map": "/porter-stemmer-playground/static/js/main.5adf95c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b939a08a.css",
-    "static/js/main.c9287857.js"
+    "static/css/main.5cb67be2.css",
+    "static/js/main.5adf95c5.js"
   ]
 }
